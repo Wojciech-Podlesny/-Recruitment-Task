@@ -2,7 +2,7 @@
 
 ## Project overview
 
-This repository contains the code for the Recruitment Task, developed as part of a recruitment process for the position of Frontend Developer. The project demonstrates skills in HTML, Tailwind CSS, and JavaScript, focusing on creating a clean, responsive, and maintainable website.
+This repository contains the code for the Recruitment Task, developed as part of a recruitment process for the position of Frontend Developer. The project demonstrates skills in HTML and Tailwind CSS, focusing on creating a clean, responsive, and maintainable website.
 
 ## Features
 
@@ -39,8 +39,6 @@ This repository contains the code for the Recruitment Task, developed as part of
 │   │   └── screenshots/     
 │   │   |   ├── destop.png 
 │   │   |   ├── mobile.png  
-│   ├── js/                  
-│   │   └── main.js 
 ├── .gitignore  
 ├── index.html             
 ├── main.css               
