@@ -15,162 +15,167 @@
 </head>
 
 <body class="bg-gray">
-    <header class="bg-white px-6 py-4 flex items-center justify-between h-16 w-full shadow-custom">
-        <img src="/src/img/Images/Logo.svg" alt="Logo" class="w-190 h-[46px] top-[9px] left-[20px]">
+    <header class="bg-white px-6 py-4 flex items-center justify-between h-16 w-full shadow-header">
+        <img src="/src/img/Images/Logo.svg" alt="Logo" class="w-190 h-46px top-9px left-20px">
         <nav aria-label="User menu" class="relative group">
             <button class="flex items-center space-x-2">
-                <img src="/src/img/Images/Avatar.svg" alt="Avatar" class="rounded-full w-[39px] h-[39px] opacity-100">
+                <img src="/src/img/Images/Avatar.svg" alt="Avatar user" class="rounded-full w-39px h-39px opacity-100">
                 <span class="text-textGrayLight opacity-100 text-left font-nunito font-normal tracking-normal">Basia</span>
-                <img class="w-6px h-3px opacity-100 top-8 left-[1884px] border-textBlack border-solid" src="/src/img/icons/Arrow.svg" alt="Arrow">
+                <img class="w-6px h-3px opacity-100 top-8 left-1884px border-textBlack border-solid" src="/src/img/icons/Arrow.svg" alt="Dropdown arrow">
             </button>
     
-            <div class="hidden group-hover:block absolute right-0 mt-10 w-80 bg-white rounded-lg shadow-lg">
-                <ul class="py-2">
-                    <li class="px-4 py-3 flex items-center space-x-2 hover:bg-gray hover:mx-6 transition-all rounded-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
-                        </svg>
-                          
-                        <span>Moje kolekcje</span>
+            <div class="hidden group-hover:block absolute right-0 mt-10 w-310px h-312px bg-white rounded-10px shadow-shadowMenu opacity-100">
+                <ul class="py-2" role="menu">
+                    <li>
+                        <a href="#" class="px-4 py-3 flex items-center space-x-2 hover:bg-hoverGrayLink hover:mx-6 transition-all rounded-lg p-5" role="menuitem">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                            </svg>
+                            <span class="font-normal text-left tracking-normal opacity-100 font-nunito text-grayLink">Moje kolekcje</span>
+                        </a>
                     </li>
-                    <li class="px-4 py-3 flex items-center space-x-2 hover:bg-gray hover:mx-6 transition-all rounded-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                          </svg>
-                          
-                        <span>Pobrania</span>
+                    <li>
+                        <a href="#" class="px-4 py-3 flex items-center space-x-2 hover:bg-hoverGrayLink hover:mx-6 transition-all rounded-lg p-5" role="menuitem">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                            </svg>
+                            <span class="font-normal text-left tracking-normal opacity-100 font-nunito text-grayLink">Pobrania</span>
+                        </a>
                     </li>
-                    <li class="px-4 py-3 flex items-center space-x-2 hover:bg-gray hover:mx-6 transition-all rounded-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                          </svg>
-                          
-                        <span>Edytuj dane</span>
+                    <li>
+                        <a href="#" class="px-4 py-3 flex items-center space-x-2 hover:bg-hoverGrayLink hover:mx-6 transition-all rounded-lg p-5" role="menuitem">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                            </svg>
+                            <span class="font-normal text-left tracking-normal opacity-100 font-nunito text-grayLink">Edytuj dane</span>
+                        </a>
                     </li>
-                    <li class="px-4 py-3 flex items-center space-x-2 hover:bg-gray hover:mx-6 transition-all rounded-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
-                          </svg>
-                          
-                        <span>Historia płatności</span>
+                    <li>
+                        <a href="#" class="px-4 py-3 flex items-center space-x-2 hover:bg-hoverGrayLink hover:mx-6 transition-all rounded-lg p-5" role="menuitem">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
+                            </svg>
+                            <span class="font-normal text-left tracking-normal opacity-100 font-nunito text-grayLink">Historia płatności</span>
+                        </a>
                     </li>
-                    <li class="px-4 py-3 flex items-center space-x-2 hover:bg-gray hover:mx-6 transition-all rounded-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
-                          </svg>
-                          
-                        <span>Zmień hasło</span>
+                    <li>
+                        <a href="#" class="px-4 py-3 flex items-center space-x-2 hover:bg-hoverGrayLink hover:mx-6 transition-all rounded-lg p-5" role="menuitem">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+                            </svg>
+                            <span class="font-normal text-left tracking-normal opacity-100 font-nunito text-grayLink">Zmień hasło</span>
+                        </a>
                     </li>
-                    <li class="relative px-4 py-3 flex items-center space-x-2 hover:bg-gray hover:mx-6 transition-all rounded-lg">
-        
-                        <div class="absolute top-0 left-[10%] w-[80%] border-t border-customGray"></div>
-             
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                        </svg>
-                        
-                        <span>Wyloguj się</span>
+                    <li>
+                        <hr class="border-customGray w-[80%] mx-auto">
+                        <a href="#" class="px-4 py-3 flex items-center space-x-2 hover:bg-hoverGrayLink hover:mx-6 transition-all rounded-lg p-5" role="menuitem">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                            </svg>
+                            <span class="font-normal text-left tracking-normal opacity-100 font-nunito text-grayLink">Wyloguj się</span>
+                        </a>
                     </li>
-                    
                 </ul>
             </div>
         </nav>
     </header>
     
     <main class="max-w-full px-4 sm:max-w-5xl mx-auto py-4">
-        <div class="mb-6 flex flex-col sm:flex-row justify-between">
+        <section class="mb-6 flex flex-col sm:flex-row justify-between">
             <div class="flex flex-col">
-                <h1 class="text-textBlack font-medium font-rubik text-2xl tracking-normal opacity-100 top-[99px] left-[375px]">
-                    Materiały edukacyjne <span class="text-base font-nunito font-normal text-textGray tracking-normal opacity-100 top-[103px] left-[652px]">(456)</span>
+                <h1 class="text-textBlack font-medium font-rubik text-2xl tracking-normal opacity-100 top-99px left-375px">
+                    Materiały edukacyjne <span class="text-base font-nunito font-normal text-textGray tracking-normal opacity-100 top-103px left-652px">(456)</span>
                 </h1>
-                <p class="text-sm sm:text-base text-textGrayLight font-nunito font-normal mt-2 tracking-normal opacity-100 top-[150px] left-[375px]">
+                <p class="text-sm sm:text-base text-textGrayLight font-nunito font-normal mt-2 tracking-normal opacity-100 top-150px left-375px">
                     Wczesnoszkolni.pl - Materiały edukacyjne
                 </p>
             </div>
             <div class="relative mt-4 sm:mt-0">
-                <input type="text" placeholder="Szukaj"  aria-label="Pole wyszukiwania"
-                    class="border rounded-[5px] px-4 py-2 pr-10 w-full sm:w-[270px] h-[40px] opacity-100 font-normal tracking-normal text-left shadow-shadowInput">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    class="absolute w-[10px] h-[10px] right-3 top-5 transform -translate-y-1/2 text-textBlack opacity-100 border-textBlack-2 border-solid"
-                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M21 21l-4.35-4.35m1.41-4.24a7.5 7.5 0 11-15 0 7.5 7.5 0 0115 0z" />
+                <input 
+                    type="text" 
+                    placeholder="Szukaj" 
+                    aria-label="Pole wyszukiwania"
+                    class="w-full border rounded-5px px-4 py-2 pr-12 h-40px opacity-100 font-normal tracking-normal text-left shadow-shadowInput"
+                >
+                <svg 
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="absolute w-10px h-10px right-4 top-5 transform -translate-y-1/2 text-textBlack opacity-100 border-textBlack-2 border-solid pointer-events-none"
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke="currentColor" 
+                    stroke-width="2">
+                    <path 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round"
+                        d="M21 21l-4.35-4.35m1.41-4.24a7.5 7.5 0 11-15 0 7.5 7.5 0 0115 0z" 
+                    />
                 </svg>
             </div>
-        </div>
+        </section>
 
         <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="flex flex-col items-start">
                     <div 
-                        class="bg-cover bg-center rounded-custom shadow-shadowImage opacity-100 transform transition-transform duration-300 hover:scale-105 relative -ml-16"
-                        style="background-image:url('/src/img/Images/Inspiracje_plastyczne.png'); width: 450px; height: 280px;">
-                        
-                        <h2 class="text-white text-center font-rubik font-medium text-lg relative mt-12 opacity-100 tracking-normal">
+                        class="bg-hero bg-cover bg-center rounded-21px shadow-shadowImage opacity-100 transform transition-transform duration-300 hover:scale-105 relative -ml-16 w-450px h-280px">
+                        <h2 class="text-white text-center font-rubik font-medium text-lg relative mt-4 pb-6 opacity-100 tracking-normal">
                             Inspiracje plastyczne
                         </h2>
                         <img src="/src/img/Images/Mask Group 120.svg" alt="Mask" 
-                             class="-mt-3 mx-auto opacity-100" 
-                             style="width: 270px; height: 223px;">
+                        class="-mt-6 mx-auto opacity-100 w-370px h-223px">
                     </div>
-
-                  
-                    <div class="flex items-center group relative" style="width: 370px;">
-                        <div class="absolute bg-purple-100 h-full left-0 top-0 rounded-full transition-all duration-300 group-hover:w-72 w-12"></div>
+                    <div class="flex items-center group relative">
+                        <div class="absolute bg-purple-100 h-full left-0 top-0 rounded-full transition-all duration-300 group-hover:w-52 w-12"></div>
                         <div class="flex items-center relative z-10">
                             <div class="p-3 rounded-full bg-purple-100 flex items-center justify-center">
-                                <img src="/src/img/Images/Pencil.svg" alt="Pencil" class="w-[30px] h-[30px]">
+                                <img src="/src/img/Images/Pencil.svg" alt="Pencil" class="w-30px h-30px opacity-100">
                             </div>
-                            <p class="text-black text-xl font-rubik font-medium text-left ml-3 opacity-100 tracking-normal top-[557px] left-[1190px]">
+                            <h3 class="text-black text-xl font-rubik font-medium text-left ml-3 opacity-100 tracking-normal top-559px left-455px">
                                 Karty pracy
-                            </p>
+                            </h3>
                         </div>
                     </div>
                 </div>
 
                 <div class="flex flex-col items-start">
                     <div 
-                        class="bg-cover bg-center rounded-custom shadow-shadowImage opacity-100 transform transition-transform duration-300 hover:scale-105 relative -ml-16"
-                        style="background-image: url('/src/img/Images/Inspiracje_plastyczne.png'); width: 450px; height: 280px;">
-                        <h2 class="text-white text-center font-rubik font-medium text-lg relative mt-12 opacity-100 tracking-normal">
-                            Inspiracje plastyczne
-                        </h2>
-                     <img src="/src/img/Images/Mask Group 120.svg" alt="Mask" 
-                             class="-mt-3 mx-auto opacity-100" 
-                             style="width: 270px; height: 223px;">
-                    </div>
-                    <div class="flex items-center group relative" style="width: 370px;">
-                        <div class="absolute bg-blue-100 h-full left-0 top-0 rounded-full transition-all duration-300 group-hover:w-72 w-12"></div>
-                        <div class="flex items-center relative z-10">
-                            <div class="p-3 rounded-full bg-blue-100 flex items-center justify-center">
-                                <img src="/src/img/Images/Brush.svg" alt="Brush" class="w-[30px] h-[30px] opacity-100">
-                            </div>
-                            <p class="text-black text-xl font-rubik font-medium text-left ml-3 opacity-100 tracking-normal top-[557px] left-[790px]">
-                                Inspiracje plastyczne
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex flex-col items-start">
-                    <div 
-                        class="bg-cover bg-center rounded-custom shadow-shadowImage opacity-100 transform transition-transform duration-300 hover:scale-105 relative -ml-16"
-                        style="background-image: url('/src/img/Images/Inspiracje_plastyczne.png'); width: 450px; height: 280px;">
-                        <h2 class="text-white text-center font-rubik font-medium text-lg relative mt-12 opacity-100 tracking-normal">
+                        class="bg-hero bg-cover bg-center rounded-21px shadow-shadowImage opacity-100 transform transition-transform duration-300 hover:scale-105 relative -ml-16 w-450px h-280px">
+                        <h2 class="text-white text-center font-rubik font-medium text-lg relative mt-4 pb-6 opacity-100 tracking-normal">
                             Inspiracje plastyczne
                         </h2>
                         <img src="/src/img/Images/Mask Group 120.svg" alt="Mask" 
-                             class="-mt-3 mx-auto opacity-100" 
-                             style="width: 270px; height: 223px;">
+                        class="-mt-6 mx-auto opacity-100 w-370px h-223px">
+                    </div>
+                    <div class="flex items-center group relative" style="width: 370px;">
+                        <div class="absolute bg-lightBlue h-full left-0 top-0 rounded-full transition-all duration-300 group-hover:w-72 w-12"></div>
+                        <div class="flex items-center relative z-10">
+                            <div class="p-3 rounded-full bg-lightBlue flex items-center justify-center">
+                                <img src="/src/img/Images/Brush.svg" alt="Brush" class="w-30px h-30px opacity-100">
+                            </div>
+                            <h3 class="text-black text-xl font-rubik font-medium text-left ml-3 opacity-100 tracking-normal top-559px left-855px">
+                                Inspiracje plastyczne
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-start">
+                    <div 
+                        class="bg-hero bg-cover bg-center rounded-21px shadow-shadowImage opacity-100 transform transition-transform duration-300 hover:scale-105 relative -ml-16 w-450px h-280px">
+                        <h2 class="text-white text-center font-rubik font-medium text-lg relative mt-4 pb-6 opacity-100 tracking-normal">
+                            Inspiracje plastyczne
+                        </h2>
+                        <img src="/src/img/Images/Mask Group 120.svg" alt="Mask" 
+                        class="-mt-6 mx-auto opacity-100 w-370px h-223px">
                     </div>
                     <div class="flex items-center group relative">
                         <div class="absolute bg-orange h-full left-0 top-0 rounded-full transition-all duration-300 group-hover:w-80 w-12"></div>
                         <div class="flex items-center relative z-10">
                             <div class="p-3 rounded-full bg-orange flex items-center justify-center">
-                                <img src="/src/img/Images/Award.svg" alt="Avard" class="w-[30px] h-[30px] opacity-100">
+                                <img src="/src/img/Images/Award.svg" alt="Avard" class="w-30px h-30px opacity-100">
                             </div>
-                            <p class="text-black text-xl font-rubik font-medium text-left ml-2 opacity-100 tracking-normal top-[557px] left-[390px]">
+                            <h3 class="text-black text-xl font-rubik font-medium text-left ml-2 opacity-100 tracking-normal top-559px left-1255px">
                                 Dyplomy i podziękowania
-                            </p>
+                            </h3>
                         </div>
                     </div>
                     
